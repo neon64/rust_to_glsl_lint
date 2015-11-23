@@ -251,17 +251,6 @@ fn expression_to_glsl(context: &mut Context, tcx: &ty::ctxt, indent: &mut Indent
                 }
             }
 
-            /*match type_def.def {
-                Some(def) => {
-                    for field in &def.0.fields {
-
-                    }
-                },
-                None => {
-                    return Err(Error::SymbolNotFound(expr.span, format!("Struct {:?} in Constructor Expression", type_def.ident)))
-                }
-            };*/
-
             indent.decrement();
 
             result.push_str(&indent.begin_line());
