@@ -1,0 +1,21 @@
+[package]
+name = "rust_to_glsl_lint"
+version = "0.1.0"
+authors = ["Chris Chamberlain <c.chamberlain@iinet.net.au>"]
+
+[lib]
+name = "rust_to_glsl_lint"
+crate-type = ["dylib"]
+
+[features]
+optimize_shaders = ["glsl_optimizer"]
+
+[dependencies]
+itertools = "0.4"
+regex = "*"
+regex_macros = "*"
+term = "*"
+maplit = "*"
+nalgebra = "*"
+linked-hash-map = "*"
+glsl_optimizer = { optional = true, path = "../glsl_optimizer" }

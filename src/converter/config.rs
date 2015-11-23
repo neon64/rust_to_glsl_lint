@@ -1,0 +1,1 @@
+pub const VARIABLE_PREFIX: &'static str = "v_";
